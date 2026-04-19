@@ -1,8 +1,10 @@
-Grupo: 502
+## Grupo: 
+502
 
-Equipo: Orbitrons
+## Equipo: 
+Orbitrons
 
-Miembros: 
+## Miembros: 
 
 Alexa Jimena González Lucio        A01277701
 
@@ -14,6 +16,7 @@ Sebastián Castellanos Rodríguez    A01710226
 
 
 La estructura seguida para la entrega consiste en un workspace de nombre puzzlebot_ws que a su vez cuenta con los paquetes puzzlebot_description, puzzlebot_gazebo y puzzlebot_navigation que nos permiten lanzar el programa como se muestra a continuación:
+
 
 puzzlebot_ws/
 
