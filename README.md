@@ -1,36 +1,35 @@
-## Grupo: 
-502
+# 🤖 Puzzlebot - Orbitrons
 
-## Equipo: 
-Orbitrons
+## 📌 Información General
+- **Grupo:** 502  
+- **Equipo:** Orbitrons  
 
-## Miembros: 
+## 👥 Integrantes
+| Nombre | Matrícula |
+|--------|----------|
+| Alexa Jimena González Lucio | A01277701 |
+| Mario Godínez Chavero | A01710451 |
+| Paul Park | A01709885 |
+| Sebastián Castellanos Rodríguez | A01710226 |
 
-Alexa Jimena González Lucio        
-**A01277701**
+---
 
-Mario Godínez Chavero              
-**A01710451**
+## 📖 Descripción del Proyecto
+Este proyecto consiste en la implementación de un robot tipo *Puzzlebot* utilizando ROS 2, enfocado en navegación autónoma y simulación en entornos virtuales.
 
-Paul Park                          
-**A01709885**
+El sistema incluye:
+- Modelado del robot
+- Simulación en Gazebo
+- Algoritmos de navegación
 
-Sebastián Castellanos Rodríguez    
-**A01710226**
+---
 
+## 📂 Estructura del Proyecto
 
-La estructura seguida para la entrega consiste en un workspace de nombre puzzlebot_ws que a su vez cuenta con los paquetes puzzlebot_description, puzzlebot_gazebo y puzzlebot_navigation que nos permiten lanzar el programa como se muestra a continuación:
-
-
+```bash
 puzzlebot_ws/
-
 └── src/
-
     └── puzzlebot_ros2/
-    
         ├── puzzlebot_description/
-        
         ├── puzzlebot_gazebo/
-        
-        ├── puzzlebot_navigation/
-
+        └── puzzlebot_navigation/
