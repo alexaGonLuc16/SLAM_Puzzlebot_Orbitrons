@@ -1,0 +1,6 @@
+<!-- ================= links y joints ================= -->
+<?xml version="1.0"?>
+<robot xmlns:xacro="https://www.ros.org/wiki/xacro" name="puzzlebot">
+
+
+<robot>
