@@ -1,6 +1,10 @@
-<!-- ================= entry point ================= -->
 <?xml version="1.0"?>
 <robot xmlns:xacro="https://www.ros.org/wiki/xacro" name="puzzlebot">
+    <!-- ================= entry point ================= -->
+    <xacro:arg name="prefix" default="" />
+
     <xacro:include filename="$(find puzzlebot_description)/urdf/puzzlebot_base.urdf.xacro"/>
     <xacro:include filename="$(find puzzlebot_description)/urdf/puzzlebot_control.xacro"/>
-<robot>
+
+    <xacro:puzzlebot_control prefix="$(arg prefix)"/>
+</robot>

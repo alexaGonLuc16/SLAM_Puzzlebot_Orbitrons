@@ -1,6 +1,217 @@
-<!-- ================= links y joints ================= -->
 <?xml version="1.0"?>
-<robot xmlns:xacro="https://www.ros.org/wiki/xacro" name="puzzlebot">
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
+  <!-- estructura física del Puzzlebot   -->
+  <xacro:macro name="puzzlebot_base" params="prefix">
 
-<robot>
+    <!-- BASE FOOTPRINT                                           -->
+    <!-- Frame base del robot usado para navegación y TF         -->
+    <!-- Normalmente se coloca en el suelo, justo debajo del robot -->
+    <!-- ========================================================= -->
+    <link name="${prefix}base_footprint"/>
+
+    <!-- ========================================================= -->
+    <!-- BASE LINK                                                -->
+    <!-- Cuerpo principal del robot                              -->
+    <!-- Contiene mesh visual, colisión e inercia                -->
+    <!-- ========================================================= -->
+    <link name="${prefix}base_link">
+
+      <!-- ================= VISUAL ================= -->
+      <!-- Cómo se ve el robot en RViz/Gazebo -->
+      <visual>
+        <origin xyz="-0.052 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://puzzlebot_description/meshes/Puzzlebot_Jetson_Lidar_Edition_Base(1).stl"
+                scale="1 1 1"/>
+        </geometry>
+
+        <material name="white">
+          <color rgba="1.0 1.0 1.0 1.0"/>
+        </material>
+      </visual>
+
+      <!-- ================= COLLISION ================= -->
+      <!-- Geometría usada por Gazebo para física -->
+      <collision>
+        <origin xyz="-0.052 0 0.05" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.20 0.14 0.10"/>
+        </geometry>
+      </collision>
+
+      <!-- ================= INERTIA ================= -->
+      <!-- Propiedades físicas del robot -->
+      <inertial>
+        <origin xyz="0 0 0"/>
+        <mass value="2.0"/>
+
+        <inertia
+          ixx="0.01" ixy="0.0" ixz="0.0"
+          iyy="0.01" iyz="0.0"
+          izz="0.02"/>
+      </inertial>
+
+    </link>
+
+    <!-- ========================================================= -->
+    <!-- JOINT BASE FOOTPRINT -> BASE LINK                        -->
+    <!-- Une el frame del suelo con el cuerpo del robot          -->
+    <!-- ========================================================= -->
+    <joint name="${prefix}base_link_joint" type="fixed">
+      <parent link="${prefix}base_footprint"/>
+      <child link="${prefix}base_link"/>
+      <origin xyz="0.052 0 0.05" rpy="0 0 0"/>
+    </joint>
+
+    <!-- ========================================================= -->
+    <!-- LLANTA IZQUIERDA                                         -->
+    <!-- ========================================================= -->
+    <link name="${prefix}wheel_l_link">
+
+      <!-- Visual -->
+      <visual>
+        <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+        <geometry>
+          <mesh filename="package://puzzlebot_description/meshes/Puzzlebot_Wheel.stl"
+                scale="1 1 1"/>
+        </geometry>
+
+        <material name="gray">
+          <color rgba="0.2 0.2 0.2 1.0"/>
+        </material>
+      </visual>
+
+      <!-- Collision -->
+      <collision>
+        <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+        <geometry>
+          <cylinder radius="0.0325" length="0.02"/>
+        </geometry>
+      </collision>
+
+      <!-- Inercia -->
+      <inertial>
+        <mass value="0.2"/>
+
+        <inertia
+          ixx="0.0002" ixy="0.0" ixz="0.0"
+          iyy="0.0002" iyz="0.0"
+          izz="0.0002"/>
+      </inertial>
+
+    </link>
+
+    <!-- Joint rueda izquierda -->
+    <joint name="${prefix}wheel_l_joint" type="continuous">
+      <parent link="${prefix}base_link"/>
+      <child link="${prefix}wheel_l_link"/>
+
+      <!-- Posición lateral izquierda -->
+      <origin xyz="0.00 0.095 0.0" rpy="0 0 0"/>
+
+      <!-- Eje de rotación -->
+      <axis xyz="0 1 0"/>
+    </joint>
+
+    <!-- ========================================================= -->
+    <!-- LLANTA DERECHA                                           -->
+    <!-- ========================================================= -->
+    <link name="${prefix}wheel_r_link">
+
+      <!-- Visual -->
+      <visual>
+        <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+        <geometry>
+          <mesh filename="package://puzzlebot_description/meshes/Puzzlebot_Wheel.stl"
+                scale="1 1 1"/>
+        </geometry>
+
+        <material name="gray">
+          <color rgba="0.2 0.2 0.2 1.0"/>
+        </material>
+      </visual>
+
+      <!-- Collision -->
+      <collision>
+        <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+        <geometry>
+          <cylinder radius="0.0325" length="0.02"/>
+        </geometry>
+      </collision>
+
+      <!-- Inercia -->
+      <inertial>
+        <mass value="0.2"/>
+
+        <inertia
+          ixx="0.0002" ixy="0.0" ixz="0.0"
+          iyy="0.0002" iyz="0.0"
+          izz="0.0002"/>
+      </inertial>
+
+    </link>
+
+    <!-- Joint rueda derecha -->
+    <joint name="${prefix}wheel_r_joint" type="continuous">
+      <parent link="${prefix}base_link"/>
+      <child link="${prefix}wheel_r_link"/>
+
+      <!-- Posición lateral derecha -->
+      <origin xyz="0.00 -0.095 0.0" rpy="0 0 0"/>
+
+      <!-- Eje de rotación -->
+      <axis xyz="0 1 0"/>
+    </joint>
+
+    <!-- ========================================================= -->
+    <!-- RUEDA CASTER                                              -->
+    <!-- Rueda loca trasera                                       -->
+    <!-- ========================================================= -->
+    <link name="${prefix}caster_link">
+
+      <!-- Visual -->
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://puzzlebot_description/meshes/Puzzlebot_Caster_Wheel.stl"
+                scale="1 1 1"/>
+        </geometry>
+
+        <material name="black">
+          <color rgba="0.0 0.0 0.0 1.0"/>
+        </material>
+      </visual>
+
+      <!-- Collision -->
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <sphere radius="0.015"/>
+        </geometry>
+      </collision>
+
+      <!-- Inercia -->
+      <inertial>
+        <mass value="0.05"/>
+
+        <inertia
+          ixx="0.00001" ixy="0.0" ixz="0.0"
+          iyy="0.00001" iyz="0.0"
+          izz="0.00001"/>
+      </inertial>
+
+    </link>
+
+    <!-- Joint caster -->
+    <joint name="${prefix}caster_joint" type="fixed">
+      <parent link="${prefix}base_link"/>
+      <child link="${prefix}caster_link"/>
+
+      <!-- Posición trasera -->
+      <origin xyz="-0.147 0 -0.045" rpy="0 0 0"/>
+    </joint>
+
+  </xacro:macro>
+
+</robot>
