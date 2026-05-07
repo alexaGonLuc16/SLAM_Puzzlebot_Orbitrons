@@ -3,14 +3,16 @@
 <package format="3">
   <name>puzzlebot_gazebo</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="marioqroqueretaro@outlook.com">mariog</maintainer>
-  <license>TODO: License declaration</license>
+  <description>Puzzlebot Gazebo simulation package with world, bridge and launch files.</description>
+  <maintainer email="mariog@todo.todo">mariog</maintainer>
+  <license>MIT</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
-  <test_depend>ament_lint_auto</test_depend>
-  <test_depend>ament_lint_common</test_depend>
+  <exec_depend>ros_gz_sim</exec_depend>
+  <exec_depend>ros_gz_bridge</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
+  <exec_depend>puzzlebot_description</exec_depend>
 
   <export>
     <build_type>ament_cmake</build_type>
