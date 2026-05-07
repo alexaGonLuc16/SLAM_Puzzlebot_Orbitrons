@@ -1,0 +1,280 @@
+[0.293s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.293s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=6, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x71bcfeb769b0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x71bcfeb75ff0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x71bcfeb75ff0>>, mixin_verb=('build',))
+[0.754s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.754s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.755s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.755s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.755s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.755s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.755s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws'
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.781s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.781s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.781s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.782s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.782s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.782s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.782s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.782s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.783s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.783s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.783s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.783s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.783s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.783s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.783s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.784s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.784s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.784s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.784s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.784s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.784s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.784s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.784s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.784s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.784s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.785s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.785s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.785s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.785s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzlebot_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.785s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzlebot_ros2) by extension 'ignore'
+[0.785s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzlebot_ros2) by extension 'ignore_ament_install'
+[0.785s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzlebot_ros2) by extensions ['colcon_pkg']
+[0.785s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzlebot_ros2) by extension 'colcon_pkg'
+[0.786s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzlebot_ros2) by extensions ['colcon_meta']
+[0.786s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzlebot_ros2) by extension 'colcon_meta'
+[0.786s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzlebot_ros2) by extensions ['ros']
+[0.786s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzlebot_ros2) by extension 'ros'
+[0.786s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzlebot_ros2) by extensions ['cmake', 'python']
+[0.786s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzlebot_ros2) by extension 'cmake'
+[0.786s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzlebot_ros2) by extension 'python'
+[0.786s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzlebot_ros2) by extensions ['python_setup_py']
+[0.786s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzlebot_ros2) by extension 'python_setup_py'
+[0.786s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzlebot_ros2/puzzlebot_description) by extensions ['ignore', 'ignore_ament_install']
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzlebot_ros2/puzzlebot_description) by extension 'ignore'
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzlebot_ros2/puzzlebot_description) by extension 'ignore_ament_install'
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzlebot_ros2/puzzlebot_description) by extensions ['colcon_pkg']
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzlebot_ros2/puzzlebot_description) by extension 'colcon_pkg'
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzlebot_ros2/puzzlebot_description) by extensions ['colcon_meta']
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzlebot_ros2/puzzlebot_description) by extension 'colcon_meta'
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzlebot_ros2/puzzlebot_description) by extensions ['ros']
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzlebot_ros2/puzzlebot_description) by extension 'ros'
+[0.791s] DEBUG:colcon.colcon_core.package_identification:Package 'src/puzzlebot_ros2/puzzlebot_description' with type 'ros.ament_cmake' and name 'puzzlebot_description'
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzlebot_ros2/puzzlebot_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzlebot_ros2/puzzlebot_gazebo) by extension 'ignore'
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzlebot_ros2/puzzlebot_gazebo) by extension 'ignore_ament_install'
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzlebot_ros2/puzzlebot_gazebo) by extensions ['colcon_pkg']
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzlebot_ros2/puzzlebot_gazebo) by extension 'colcon_pkg'
+[0.792s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzlebot_ros2/puzzlebot_gazebo) by extensions ['colcon_meta']
+[0.792s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzlebot_ros2/puzzlebot_gazebo) by extension 'colcon_meta'
+[0.792s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzlebot_ros2/puzzlebot_gazebo) by extensions ['ros']
+[0.792s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzlebot_ros2/puzzlebot_gazebo) by extension 'ros'
+[0.793s] DEBUG:colcon.colcon_core.package_identification:Package 'src/puzzlebot_ros2/puzzlebot_gazebo' with type 'ros.ament_cmake' and name 'puzzlebot_gazebo'
+[0.793s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzlebot_ros2/puzzlebot_navigation2) by extensions ['ignore', 'ignore_ament_install']
+[0.793s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzlebot_ros2/puzzlebot_navigation2) by extension 'ignore'
+[0.793s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzlebot_ros2/puzzlebot_navigation2) by extension 'ignore_ament_install'
+[0.793s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzlebot_ros2/puzzlebot_navigation2) by extensions ['colcon_pkg']
+[0.793s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzlebot_ros2/puzzlebot_navigation2) by extension 'colcon_pkg'
+[0.793s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzlebot_ros2/puzzlebot_navigation2) by extensions ['colcon_meta']
+[0.793s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzlebot_ros2/puzzlebot_navigation2) by extension 'colcon_meta'
+[0.793s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzlebot_ros2/puzzlebot_navigation2) by extensions ['ros']
+[0.793s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzlebot_ros2/puzzlebot_navigation2) by extension 'ros'
+[0.794s] DEBUG:colcon.colcon_core.package_identification:Package 'src/puzzlebot_ros2/puzzlebot_navigation2' with type 'ros.ament_cmake' and name 'puzzlebot_navigation2'
+[0.794s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.794s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.794s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.794s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.795s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.828s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.828s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.837s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 9 installed packages in /home/sebastian/ros2_ws/install
+[0.838s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 15 installed packages in /home/sebastian/dev_ws/install
+[0.839s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/sebastian/ros2_ws/src/my_package/install
+[0.840s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/sebastian/ros2_ws/src/install
+[0.842s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 457 installed packages in /opt/ros/humble
+[0.846s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.964s] Level 5:colcon.colcon_core.verb:set package 'puzzlebot_description' build argument 'cmake_args' from command line to 'None'
+[0.964s] Level 5:colcon.colcon_core.verb:set package 'puzzlebot_description' build argument 'cmake_target' from command line to 'None'
+[0.964s] Level 5:colcon.colcon_core.verb:set package 'puzzlebot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.965s] Level 5:colcon.colcon_core.verb:set package 'puzzlebot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.965s] Level 5:colcon.colcon_core.verb:set package 'puzzlebot_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.965s] Level 5:colcon.colcon_core.verb:set package 'puzzlebot_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.965s] Level 5:colcon.colcon_core.verb:set package 'puzzlebot_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.965s] Level 5:colcon.colcon_core.verb:set package 'puzzlebot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.965s] Level 5:colcon.colcon_core.verb:set package 'puzzlebot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.965s] DEBUG:colcon.colcon_core.verb:Building package 'puzzlebot_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/build/puzzlebot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_description', 'merge_install': False, 'path': '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/src/puzzlebot_ros2/puzzlebot_description', 'symlink_install': False, 'test_result_base': None}
+[0.965s] Level 5:colcon.colcon_core.verb:set package 'puzzlebot_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.965s] Level 5:colcon.colcon_core.verb:set package 'puzzlebot_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.965s] Level 5:colcon.colcon_core.verb:set package 'puzzlebot_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.965s] Level 5:colcon.colcon_core.verb:set package 'puzzlebot_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.965s] Level 5:colcon.colcon_core.verb:set package 'puzzlebot_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.965s] Level 5:colcon.colcon_core.verb:set package 'puzzlebot_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.965s] Level 5:colcon.colcon_core.verb:set package 'puzzlebot_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.965s] Level 5:colcon.colcon_core.verb:set package 'puzzlebot_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.965s] Level 5:colcon.colcon_core.verb:set package 'puzzlebot_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.965s] DEBUG:colcon.colcon_core.verb:Building package 'puzzlebot_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/build/puzzlebot_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo', 'merge_install': False, 'path': '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/src/puzzlebot_ros2/puzzlebot_gazebo', 'symlink_install': False, 'test_result_base': None}
+[0.966s] Level 5:colcon.colcon_core.verb:set package 'puzzlebot_navigation2' build argument 'cmake_args' from command line to 'None'
+[0.966s] Level 5:colcon.colcon_core.verb:set package 'puzzlebot_navigation2' build argument 'cmake_target' from command line to 'None'
+[0.966s] Level 5:colcon.colcon_core.verb:set package 'puzzlebot_navigation2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.966s] Level 5:colcon.colcon_core.verb:set package 'puzzlebot_navigation2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.966s] Level 5:colcon.colcon_core.verb:set package 'puzzlebot_navigation2' build argument 'cmake_clean_first' from command line to 'False'
+[0.966s] Level 5:colcon.colcon_core.verb:set package 'puzzlebot_navigation2' build argument 'cmake_force_configure' from command line to 'False'
+[0.966s] Level 5:colcon.colcon_core.verb:set package 'puzzlebot_navigation2' build argument 'ament_cmake_args' from command line to 'None'
+[0.966s] Level 5:colcon.colcon_core.verb:set package 'puzzlebot_navigation2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.966s] Level 5:colcon.colcon_core.verb:set package 'puzzlebot_navigation2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.966s] DEBUG:colcon.colcon_core.verb:Building package 'puzzlebot_navigation2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/build/puzzlebot_navigation2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_navigation2', 'merge_install': False, 'path': '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/src/puzzlebot_ros2/puzzlebot_navigation2', 'symlink_install': False, 'test_result_base': None}
+[0.966s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.968s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.969s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/src/puzzlebot_ros2/puzzlebot_description' with build type 'ament_cmake'
+[0.969s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/src/puzzlebot_ros2/puzzlebot_description'
+[0.976s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.976s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.977s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.985s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/src/puzzlebot_ros2/puzzlebot_gazebo' with build type 'ament_cmake'
+[0.985s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/src/puzzlebot_ros2/puzzlebot_gazebo'
+[0.986s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.986s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.994s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/src/puzzlebot_ros2/puzzlebot_navigation2' with build type 'ament_cmake'
+[0.994s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/src/puzzlebot_ros2/puzzlebot_navigation2'
+[0.995s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.995s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.011s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/build/puzzlebot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sebastian/ros2_ws/install/tf_examples:/home/sebastian/ros2_ws/install/puzzlebot_sim:/home/sebastian/ros2_ws/install/puzzlebot_gazebo:/home/sebastian/ros2_ws/install/puzzlebot_description:/home/sebastian/ros2_ws/install/my_package:/home/sebastian/ros2_ws/install/motor_control:/home/sebastian/ros2_ws/install/mobile_robotics:/home/sebastian/ros2_ws/install/joints_act:/home/sebastian/ros2_ws/install/basic_comms:/home/sebastian/dev_ws/install/visual_cobot:/home/sebastian/dev_ws/install/xarm_msgs:/home/sebastian/dev_ws/install/ulite6_move:/home/sebastian/dev_ws/install/uf_ros_lib:/home/sebastian/ros2_ws/src/my_package/install/my_package:/home/sebastian/ros2_ws/src/install/my_package:/home/sebastian/ros2_ws/src/install/basic_comms:/opt/ros/humble /usr/bin/cmake --build /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/build/puzzlebot_description -- -j6 -l6
+[1.024s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/build/puzzlebot_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sebastian/ros2_ws/install/tf_examples:/home/sebastian/ros2_ws/install/puzzlebot_sim:/home/sebastian/ros2_ws/install/puzzlebot_gazebo:/home/sebastian/ros2_ws/install/puzzlebot_description:/home/sebastian/ros2_ws/install/my_package:/home/sebastian/ros2_ws/install/motor_control:/home/sebastian/ros2_ws/install/mobile_robotics:/home/sebastian/ros2_ws/install/joints_act:/home/sebastian/ros2_ws/install/basic_comms:/home/sebastian/dev_ws/install/visual_cobot:/home/sebastian/dev_ws/install/xarm_msgs:/home/sebastian/dev_ws/install/ulite6_move:/home/sebastian/dev_ws/install/uf_ros_lib:/home/sebastian/ros2_ws/src/my_package/install/my_package:/home/sebastian/ros2_ws/src/install/my_package:/home/sebastian/ros2_ws/src/install/basic_comms:/opt/ros/humble /usr/bin/cmake --build /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/build/puzzlebot_gazebo -- -j6 -l6
+[1.035s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/build/puzzlebot_navigation2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sebastian/ros2_ws/install/tf_examples:/home/sebastian/ros2_ws/install/puzzlebot_sim:/home/sebastian/ros2_ws/install/puzzlebot_gazebo:/home/sebastian/ros2_ws/install/puzzlebot_description:/home/sebastian/ros2_ws/install/my_package:/home/sebastian/ros2_ws/install/motor_control:/home/sebastian/ros2_ws/install/mobile_robotics:/home/sebastian/ros2_ws/install/joints_act:/home/sebastian/ros2_ws/install/basic_comms:/home/sebastian/dev_ws/install/visual_cobot:/home/sebastian/dev_ws/install/xarm_msgs:/home/sebastian/dev_ws/install/ulite6_move:/home/sebastian/dev_ws/install/uf_ros_lib:/home/sebastian/ros2_ws/src/my_package/install/my_package:/home/sebastian/ros2_ws/src/install/my_package:/home/sebastian/ros2_ws/src/install/basic_comms:/opt/ros/humble /usr/bin/cmake --build /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/build/puzzlebot_navigation2 -- -j6 -l6
+[1.126s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/build/puzzlebot_navigation2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sebastian/ros2_ws/install/tf_examples:/home/sebastian/ros2_ws/install/puzzlebot_sim:/home/sebastian/ros2_ws/install/puzzlebot_gazebo:/home/sebastian/ros2_ws/install/puzzlebot_description:/home/sebastian/ros2_ws/install/my_package:/home/sebastian/ros2_ws/install/motor_control:/home/sebastian/ros2_ws/install/mobile_robotics:/home/sebastian/ros2_ws/install/joints_act:/home/sebastian/ros2_ws/install/basic_comms:/home/sebastian/dev_ws/install/visual_cobot:/home/sebastian/dev_ws/install/xarm_msgs:/home/sebastian/dev_ws/install/ulite6_move:/home/sebastian/dev_ws/install/uf_ros_lib:/home/sebastian/ros2_ws/src/my_package/install/my_package:/home/sebastian/ros2_ws/src/install/my_package:/home/sebastian/ros2_ws/src/install/basic_comms:/opt/ros/humble /usr/bin/cmake --build /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/build/puzzlebot_navigation2 -- -j6 -l6
+[1.145s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/build/puzzlebot_navigation2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sebastian/ros2_ws/install/tf_examples:/home/sebastian/ros2_ws/install/puzzlebot_sim:/home/sebastian/ros2_ws/install/puzzlebot_gazebo:/home/sebastian/ros2_ws/install/puzzlebot_description:/home/sebastian/ros2_ws/install/my_package:/home/sebastian/ros2_ws/install/motor_control:/home/sebastian/ros2_ws/install/mobile_robotics:/home/sebastian/ros2_ws/install/joints_act:/home/sebastian/ros2_ws/install/basic_comms:/home/sebastian/dev_ws/install/visual_cobot:/home/sebastian/dev_ws/install/xarm_msgs:/home/sebastian/dev_ws/install/ulite6_move:/home/sebastian/dev_ws/install/uf_ros_lib:/home/sebastian/ros2_ws/src/my_package/install/my_package:/home/sebastian/ros2_ws/src/install/my_package:/home/sebastian/ros2_ws/src/install/basic_comms:/opt/ros/humble /usr/bin/cmake --install /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/build/puzzlebot_navigation2
+[1.147s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/build/puzzlebot_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sebastian/ros2_ws/install/tf_examples:/home/sebastian/ros2_ws/install/puzzlebot_sim:/home/sebastian/ros2_ws/install/puzzlebot_gazebo:/home/sebastian/ros2_ws/install/puzzlebot_description:/home/sebastian/ros2_ws/install/my_package:/home/sebastian/ros2_ws/install/motor_control:/home/sebastian/ros2_ws/install/mobile_robotics:/home/sebastian/ros2_ws/install/joints_act:/home/sebastian/ros2_ws/install/basic_comms:/home/sebastian/dev_ws/install/visual_cobot:/home/sebastian/dev_ws/install/xarm_msgs:/home/sebastian/dev_ws/install/ulite6_move:/home/sebastian/dev_ws/install/uf_ros_lib:/home/sebastian/ros2_ws/src/my_package/install/my_package:/home/sebastian/ros2_ws/src/install/my_package:/home/sebastian/ros2_ws/src/install/basic_comms:/opt/ros/humble /usr/bin/cmake --build /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/build/puzzlebot_gazebo -- -j6 -l6
+[1.151s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/build/puzzlebot_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sebastian/ros2_ws/install/tf_examples:/home/sebastian/ros2_ws/install/puzzlebot_sim:/home/sebastian/ros2_ws/install/puzzlebot_gazebo:/home/sebastian/ros2_ws/install/puzzlebot_description:/home/sebastian/ros2_ws/install/my_package:/home/sebastian/ros2_ws/install/motor_control:/home/sebastian/ros2_ws/install/mobile_robotics:/home/sebastian/ros2_ws/install/joints_act:/home/sebastian/ros2_ws/install/basic_comms:/home/sebastian/dev_ws/install/visual_cobot:/home/sebastian/dev_ws/install/xarm_msgs:/home/sebastian/dev_ws/install/ulite6_move:/home/sebastian/dev_ws/install/uf_ros_lib:/home/sebastian/ros2_ws/src/my_package/install/my_package:/home/sebastian/ros2_ws/src/install/my_package:/home/sebastian/ros2_ws/src/install/basic_comms:/opt/ros/humble /usr/bin/cmake --install /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/build/puzzlebot_gazebo
+[1.164s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(puzzlebot_navigation2)
+[1.166s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/build/puzzlebot_navigation2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sebastian/ros2_ws/install/tf_examples:/home/sebastian/ros2_ws/install/puzzlebot_sim:/home/sebastian/ros2_ws/install/puzzlebot_gazebo:/home/sebastian/ros2_ws/install/puzzlebot_description:/home/sebastian/ros2_ws/install/my_package:/home/sebastian/ros2_ws/install/motor_control:/home/sebastian/ros2_ws/install/mobile_robotics:/home/sebastian/ros2_ws/install/joints_act:/home/sebastian/ros2_ws/install/basic_comms:/home/sebastian/dev_ws/install/visual_cobot:/home/sebastian/dev_ws/install/xarm_msgs:/home/sebastian/dev_ws/install/ulite6_move:/home/sebastian/dev_ws/install/uf_ros_lib:/home/sebastian/ros2_ws/src/my_package/install/my_package:/home/sebastian/ros2_ws/src/install/my_package:/home/sebastian/ros2_ws/src/install/basic_comms:/opt/ros/humble /usr/bin/cmake --install /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/build/puzzlebot_navigation2
+[1.177s] Level 1:colcon.colcon_core.environment:checking '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_navigation2' for CMake module files
+[1.177s] Level 1:colcon.colcon_core.environment:checking '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_navigation2' for CMake config files
+[1.177s] Level 1:colcon.colcon_core.shell:create_environment_hook('puzzlebot_navigation2', 'cmake_prefix_path')
+[1.178s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_navigation2/share/puzzlebot_navigation2/hook/cmake_prefix_path.ps1'
+[1.179s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_navigation2/share/puzzlebot_navigation2/hook/cmake_prefix_path.dsv'
+[1.180s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_navigation2/share/puzzlebot_navigation2/hook/cmake_prefix_path.sh'
+[1.182s] Level 1:colcon.colcon_core.environment:checking '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_navigation2/bin'
+[1.182s] Level 1:colcon.colcon_core.environment:checking '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_navigation2/lib/pkgconfig/puzzlebot_navigation2.pc'
+[1.182s] Level 1:colcon.colcon_core.environment:checking '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_navigation2/lib/python3.10/site-packages'
+[1.183s] Level 1:colcon.colcon_core.environment:checking '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_navigation2/bin'
+[1.183s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_navigation2/share/puzzlebot_navigation2/package.ps1'
+[1.184s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_navigation2/share/puzzlebot_navigation2/package.dsv'
+[1.186s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_navigation2/share/puzzlebot_navigation2/package.sh'
+[1.187s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_navigation2/share/puzzlebot_navigation2/package.bash'
+[1.188s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_navigation2/share/puzzlebot_navigation2/package.zsh'
+[1.190s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_navigation2/share/colcon-core/packages/puzzlebot_navigation2)
+[1.190s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(puzzlebot_navigation2)
+[1.191s] Level 1:colcon.colcon_core.environment:checking '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_navigation2' for CMake module files
+[1.191s] Level 1:colcon.colcon_core.environment:checking '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_navigation2' for CMake config files
+[1.191s] Level 1:colcon.colcon_core.shell:create_environment_hook('puzzlebot_navigation2', 'cmake_prefix_path')
+[1.192s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_navigation2/share/puzzlebot_navigation2/hook/cmake_prefix_path.ps1'
+[1.192s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_navigation2/share/puzzlebot_navigation2/hook/cmake_prefix_path.dsv'
+[1.193s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_navigation2/share/puzzlebot_navigation2/hook/cmake_prefix_path.sh'
+[1.193s] Level 1:colcon.colcon_core.environment:checking '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_navigation2/bin'
+[1.194s] Level 1:colcon.colcon_core.environment:checking '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_navigation2/lib/pkgconfig/puzzlebot_navigation2.pc'
+[1.194s] Level 1:colcon.colcon_core.environment:checking '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_navigation2/lib/python3.10/site-packages'
+[1.194s] Level 1:colcon.colcon_core.environment:checking '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_navigation2/bin'
+[1.194s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_navigation2/share/puzzlebot_navigation2/package.ps1'
+[1.195s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_navigation2/share/puzzlebot_navigation2/package.dsv'
+[1.195s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_navigation2/share/puzzlebot_navigation2/package.sh'
+[1.196s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_navigation2/share/puzzlebot_navigation2/package.bash'
+[1.197s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_navigation2/share/puzzlebot_navigation2/package.zsh'
+[1.198s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_navigation2/share/colcon-core/packages/puzzlebot_navigation2)
+[1.200s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(puzzlebot_gazebo)
+[1.200s] Level 1:colcon.colcon_core.environment:checking '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo' for CMake module files
+[1.202s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/build/puzzlebot_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sebastian/ros2_ws/install/tf_examples:/home/sebastian/ros2_ws/install/puzzlebot_sim:/home/sebastian/ros2_ws/install/puzzlebot_gazebo:/home/sebastian/ros2_ws/install/puzzlebot_description:/home/sebastian/ros2_ws/install/my_package:/home/sebastian/ros2_ws/install/motor_control:/home/sebastian/ros2_ws/install/mobile_robotics:/home/sebastian/ros2_ws/install/joints_act:/home/sebastian/ros2_ws/install/basic_comms:/home/sebastian/dev_ws/install/visual_cobot:/home/sebastian/dev_ws/install/xarm_msgs:/home/sebastian/dev_ws/install/ulite6_move:/home/sebastian/dev_ws/install/uf_ros_lib:/home/sebastian/ros2_ws/src/my_package/install/my_package:/home/sebastian/ros2_ws/src/install/my_package:/home/sebastian/ros2_ws/src/install/basic_comms:/opt/ros/humble /usr/bin/cmake --install /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/build/puzzlebot_gazebo
+[1.202s] Level 1:colcon.colcon_core.environment:checking '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo' for CMake config files
+[1.203s] Level 1:colcon.colcon_core.shell:create_environment_hook('puzzlebot_gazebo', 'cmake_prefix_path')
+[1.203s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/share/puzzlebot_gazebo/hook/cmake_prefix_path.ps1'
+[1.204s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/share/puzzlebot_gazebo/hook/cmake_prefix_path.dsv'
+[1.205s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/share/puzzlebot_gazebo/hook/cmake_prefix_path.sh'
+[1.206s] Level 1:colcon.colcon_core.environment:checking '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/bin'
+[1.206s] Level 1:colcon.colcon_core.environment:checking '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/lib/pkgconfig/puzzlebot_gazebo.pc'
+[1.206s] Level 1:colcon.colcon_core.environment:checking '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/lib/python3.10/site-packages'
+[1.206s] Level 1:colcon.colcon_core.environment:checking '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/bin'
+[1.207s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/share/puzzlebot_gazebo/package.ps1'
+[1.207s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/share/puzzlebot_gazebo/package.dsv'
+[1.208s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/share/puzzlebot_gazebo/package.sh'
+[1.209s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/share/puzzlebot_gazebo/package.bash'
+[1.209s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/share/puzzlebot_gazebo/package.zsh'
+[1.210s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/share/colcon-core/packages/puzzlebot_gazebo)
+[1.211s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(puzzlebot_gazebo)
+[1.211s] Level 1:colcon.colcon_core.environment:checking '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo' for CMake module files
+[1.211s] Level 1:colcon.colcon_core.environment:checking '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo' for CMake config files
+[1.212s] Level 1:colcon.colcon_core.shell:create_environment_hook('puzzlebot_gazebo', 'cmake_prefix_path')
+[1.212s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/share/puzzlebot_gazebo/hook/cmake_prefix_path.ps1'
+[1.213s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/share/puzzlebot_gazebo/hook/cmake_prefix_path.dsv'
+[1.213s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/share/puzzlebot_gazebo/hook/cmake_prefix_path.sh'
+[1.214s] Level 1:colcon.colcon_core.environment:checking '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/bin'
+[1.214s] Level 1:colcon.colcon_core.environment:checking '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/lib/pkgconfig/puzzlebot_gazebo.pc'
+[1.215s] Level 1:colcon.colcon_core.environment:checking '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/lib/python3.10/site-packages'
+[1.215s] Level 1:colcon.colcon_core.environment:checking '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/bin'
+[1.215s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/share/puzzlebot_gazebo/package.ps1'
+[1.216s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/share/puzzlebot_gazebo/package.dsv'
+[1.217s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/share/puzzlebot_gazebo/package.sh'
+[1.218s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/share/puzzlebot_gazebo/package.bash'
+[1.219s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/share/puzzlebot_gazebo/package.zsh'
+[1.219s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/share/colcon-core/packages/puzzlebot_gazebo)
+[1.489s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/build/puzzlebot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sebastian/ros2_ws/install/tf_examples:/home/sebastian/ros2_ws/install/puzzlebot_sim:/home/sebastian/ros2_ws/install/puzzlebot_gazebo:/home/sebastian/ros2_ws/install/puzzlebot_description:/home/sebastian/ros2_ws/install/my_package:/home/sebastian/ros2_ws/install/motor_control:/home/sebastian/ros2_ws/install/mobile_robotics:/home/sebastian/ros2_ws/install/joints_act:/home/sebastian/ros2_ws/install/basic_comms:/home/sebastian/dev_ws/install/visual_cobot:/home/sebastian/dev_ws/install/xarm_msgs:/home/sebastian/dev_ws/install/ulite6_move:/home/sebastian/dev_ws/install/uf_ros_lib:/home/sebastian/ros2_ws/src/my_package/install/my_package:/home/sebastian/ros2_ws/src/install/my_package:/home/sebastian/ros2_ws/src/install/basic_comms:/opt/ros/humble /usr/bin/cmake --build /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/build/puzzlebot_description -- -j6 -l6
+[1.492s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/build/puzzlebot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sebastian/ros2_ws/install/tf_examples:/home/sebastian/ros2_ws/install/puzzlebot_sim:/home/sebastian/ros2_ws/install/puzzlebot_gazebo:/home/sebastian/ros2_ws/install/puzzlebot_description:/home/sebastian/ros2_ws/install/my_package:/home/sebastian/ros2_ws/install/motor_control:/home/sebastian/ros2_ws/install/mobile_robotics:/home/sebastian/ros2_ws/install/joints_act:/home/sebastian/ros2_ws/install/basic_comms:/home/sebastian/dev_ws/install/visual_cobot:/home/sebastian/dev_ws/install/xarm_msgs:/home/sebastian/dev_ws/install/ulite6_move:/home/sebastian/dev_ws/install/uf_ros_lib:/home/sebastian/ros2_ws/src/my_package/install/my_package:/home/sebastian/ros2_ws/src/install/my_package:/home/sebastian/ros2_ws/src/install/basic_comms:/opt/ros/humble /usr/bin/cmake --install /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/build/puzzlebot_description
+[1.522s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(puzzlebot_description)
+[1.523s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/build/puzzlebot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sebastian/ros2_ws/install/tf_examples:/home/sebastian/ros2_ws/install/puzzlebot_sim:/home/sebastian/ros2_ws/install/puzzlebot_gazebo:/home/sebastian/ros2_ws/install/puzzlebot_description:/home/sebastian/ros2_ws/install/my_package:/home/sebastian/ros2_ws/install/motor_control:/home/sebastian/ros2_ws/install/mobile_robotics:/home/sebastian/ros2_ws/install/joints_act:/home/sebastian/ros2_ws/install/basic_comms:/home/sebastian/dev_ws/install/visual_cobot:/home/sebastian/dev_ws/install/xarm_msgs:/home/sebastian/dev_ws/install/ulite6_move:/home/sebastian/dev_ws/install/uf_ros_lib:/home/sebastian/ros2_ws/src/my_package/install/my_package:/home/sebastian/ros2_ws/src/install/my_package:/home/sebastian/ros2_ws/src/install/basic_comms:/opt/ros/humble /usr/bin/cmake --install /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/build/puzzlebot_description
+[1.523s] Level 1:colcon.colcon_core.environment:checking '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_description' for CMake module files
+[1.524s] Level 1:colcon.colcon_core.environment:checking '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_description' for CMake config files
+[1.524s] Level 1:colcon.colcon_core.shell:create_environment_hook('puzzlebot_description', 'cmake_prefix_path')
+[1.525s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_description/share/puzzlebot_description/hook/cmake_prefix_path.ps1'
+[1.525s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_description/share/puzzlebot_description/hook/cmake_prefix_path.dsv'
+[1.526s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_description/share/puzzlebot_description/hook/cmake_prefix_path.sh'
+[1.527s] Level 1:colcon.colcon_core.environment:checking '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_description/bin'
+[1.527s] Level 1:colcon.colcon_core.environment:checking '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_description/lib/pkgconfig/puzzlebot_description.pc'
+[1.527s] Level 1:colcon.colcon_core.environment:checking '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_description/lib/python3.10/site-packages'
+[1.528s] Level 1:colcon.colcon_core.environment:checking '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_description/bin'
+[1.528s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_description/share/puzzlebot_description/package.ps1'
+[1.529s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_description/share/puzzlebot_description/package.dsv'
+[1.529s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_description/share/puzzlebot_description/package.sh'
+[1.530s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_description/share/puzzlebot_description/package.bash'
+[1.531s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_description/share/puzzlebot_description/package.zsh'
+[1.531s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_description/share/colcon-core/packages/puzzlebot_description)
+[1.532s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(puzzlebot_description)
+[1.533s] Level 1:colcon.colcon_core.environment:checking '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_description' for CMake module files
+[1.533s] Level 1:colcon.colcon_core.environment:checking '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_description' for CMake config files
+[1.533s] Level 1:colcon.colcon_core.shell:create_environment_hook('puzzlebot_description', 'cmake_prefix_path')
+[1.534s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_description/share/puzzlebot_description/hook/cmake_prefix_path.ps1'
+[1.534s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_description/share/puzzlebot_description/hook/cmake_prefix_path.dsv'
+[1.535s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_description/share/puzzlebot_description/hook/cmake_prefix_path.sh'
+[1.536s] Level 1:colcon.colcon_core.environment:checking '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_description/bin'
+[1.536s] Level 1:colcon.colcon_core.environment:checking '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_description/lib/pkgconfig/puzzlebot_description.pc'
+[1.536s] Level 1:colcon.colcon_core.environment:checking '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_description/lib/python3.10/site-packages'
+[1.536s] Level 1:colcon.colcon_core.environment:checking '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_description/bin'
+[1.537s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_description/share/puzzlebot_description/package.ps1'
+[1.537s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_description/share/puzzlebot_description/package.dsv'
+[1.538s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_description/share/puzzlebot_description/package.sh'
+[1.539s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_description/share/puzzlebot_description/package.bash'
+[1.539s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_description/share/puzzlebot_description/package.zsh'
+[1.540s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_description/share/colcon-core/packages/puzzlebot_description)
+[1.541s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.541s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.542s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.543s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.552s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.552s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.552s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.578s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.579s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/local_setup.ps1'
+[1.580s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/_local_setup_util_ps1.py'
+[1.583s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/setup.ps1'
+[1.585s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/local_setup.sh'
+[1.587s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/_local_setup_util_sh.py'
+[1.588s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/setup.sh'
+[1.591s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/local_setup.bash'
+[1.593s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/setup.bash'
+[1.596s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/local_setup.zsh'
+[1.597s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/setup.zsh'

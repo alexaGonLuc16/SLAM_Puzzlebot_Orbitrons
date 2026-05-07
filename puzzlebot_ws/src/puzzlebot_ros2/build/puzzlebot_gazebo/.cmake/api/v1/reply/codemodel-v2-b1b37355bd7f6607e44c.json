@@ -1,0 +1,70 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-ca371bb78fbc908e7b07.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "puzzlebot_gazebo",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "puzzlebot_gazebo_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-puzzlebot_gazebo_uninstall-7ef7f86a4bed5d5aa07b.json",
+					"name" : "puzzlebot_gazebo_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-6e4d79726ac34d34798a.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/src/puzzlebot_ros2/build/puzzlebot_gazebo",
+		"source" : "/home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/src/puzzlebot_ros2/puzzlebot_gazebo"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

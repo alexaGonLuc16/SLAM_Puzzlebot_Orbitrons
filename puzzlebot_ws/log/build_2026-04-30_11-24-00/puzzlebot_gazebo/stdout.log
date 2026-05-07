@@ -1,0 +1,26 @@
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/build/puzzlebot_gazebo
+-- Install configuration: ""
+-- Installing: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/share/puzzlebot_gazebo/launch
+-- Installing: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/share/puzzlebot_gazebo/launch/puzzlebot_gazebo.launch.xml
+-- Installing: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/share/puzzlebot_gazebo/worlds
+-- Installing: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/share/puzzlebot_gazebo/worlds/maze.world
+-- Installing: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/share/puzzlebot_gazebo/config
+-- Installing: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/share/puzzlebot_gazebo/config/gazebo_bridge.yaml
+-- Installing: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/share/ament_index/resource_index/package_run_dependencies/puzzlebot_gazebo
+-- Installing: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/share/ament_index/resource_index/parent_prefix_path/puzzlebot_gazebo
+-- Up-to-date: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/share/puzzlebot_gazebo/environment/ament_prefix_path.sh
+-- Installing: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/share/puzzlebot_gazebo/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/share/puzzlebot_gazebo/environment/path.sh
+-- Installing: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/share/puzzlebot_gazebo/environment/path.dsv
+-- Up-to-date: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/share/puzzlebot_gazebo/local_setup.bash
+-- Up-to-date: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/share/puzzlebot_gazebo/local_setup.sh
+-- Up-to-date: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/share/puzzlebot_gazebo/local_setup.zsh
+-- Installing: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/share/puzzlebot_gazebo/local_setup.dsv
+-- Installing: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/share/puzzlebot_gazebo/package.dsv
+-- Up-to-date: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/share/ament_index/resource_index/packages/puzzlebot_gazebo
+-- Up-to-date: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/share/puzzlebot_gazebo/cmake/puzzlebot_gazeboConfig.cmake
+-- Up-to-date: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/share/puzzlebot_gazebo/cmake/puzzlebot_gazeboConfig-version.cmake
+-- Installing: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/install/puzzlebot_gazebo/share/puzzlebot_gazebo/package.xml

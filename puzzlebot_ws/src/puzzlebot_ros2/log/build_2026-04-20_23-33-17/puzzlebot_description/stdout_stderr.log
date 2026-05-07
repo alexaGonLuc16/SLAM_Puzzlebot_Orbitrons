@@ -1,0 +1,46 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/src/puzzlebot_ros2/build/puzzlebot_description
+-- Install configuration: ""
+-- Installing: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/src/puzzlebot_ros2/install/puzzlebot_description/share/puzzlebot_description/urdf
+-- Installing: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/src/puzzlebot_ros2/install/puzzlebot_description/share/puzzlebot_description/urdf/puzzlebot.xacro
+-- Installing: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/src/puzzlebot_ros2/install/puzzlebot_description/share/puzzlebot_description/rviz
+-- Installing: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/src/puzzlebot_ros2/install/puzzlebot_description/share/puzzlebot_description/rviz/puzzlebot_description.rviz
+-- Installing: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/src/puzzlebot_ros2/install/puzzlebot_description/share/puzzlebot_description/meshes
+-- Installing: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/src/puzzlebot_ros2/install/puzzlebot_description/share/puzzlebot_description/meshes/Base
+-- Installing: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/src/puzzlebot_ros2/install/puzzlebot_description/share/puzzlebot_description/meshes/Base/MCR2_puzzlebot_jetson_lidar_base.stl
+-- Installing: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/src/puzzlebot_ros2/install/puzzlebot_description/share/puzzlebot_description/meshes/Wheel
+-- Installing: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/src/puzzlebot_ros2/install/puzzlebot_description/share/puzzlebot_description/meshes/Wheel/Puzzlebot_Wheel.stl
+-- Installing: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/src/puzzlebot_ros2/install/puzzlebot_description/share/puzzlebot_description/meshes/Caster_wheel
+-- Installing: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/src/puzzlebot_ros2/install/puzzlebot_description/share/puzzlebot_description/meshes/Caster_wheel/Puzzlebot_Caster_Wheel.stl
+-- Installing: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/src/puzzlebot_ros2/install/puzzlebot_description/share/puzzlebot_description/launch
+-- Installing: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/src/puzzlebot_ros2/install/puzzlebot_description/share/puzzlebot_description/launch/puzzlebot_description.launch.xml
+-- Installing: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/src/puzzlebot_ros2/install/puzzlebot_description/share/ament_index/resource_index/package_run_dependencies/puzzlebot_description
+-- Installing: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/src/puzzlebot_ros2/install/puzzlebot_description/share/ament_index/resource_index/parent_prefix_path/puzzlebot_description
+-- Installing: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/src/puzzlebot_ros2/install/puzzlebot_description/share/puzzlebot_description/environment/ament_prefix_path.sh
+-- Installing: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/src/puzzlebot_ros2/install/puzzlebot_description/share/puzzlebot_description/environment/ament_prefix_path.dsv
+-- Installing: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/src/puzzlebot_ros2/install/puzzlebot_description/share/puzzlebot_description/environment/path.sh
+-- Installing: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/src/puzzlebot_ros2/install/puzzlebot_description/share/puzzlebot_description/environment/path.dsv
+-- Installing: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/src/puzzlebot_ros2/install/puzzlebot_description/share/puzzlebot_description/local_setup.bash
+-- Installing: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/src/puzzlebot_ros2/install/puzzlebot_description/share/puzzlebot_description/local_setup.sh
+-- Installing: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/src/puzzlebot_ros2/install/puzzlebot_description/share/puzzlebot_description/local_setup.zsh
+-- Installing: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/src/puzzlebot_ros2/install/puzzlebot_description/share/puzzlebot_description/local_setup.dsv
+-- Installing: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/src/puzzlebot_ros2/install/puzzlebot_description/share/puzzlebot_description/package.dsv
+-- Installing: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/src/puzzlebot_ros2/install/puzzlebot_description/share/ament_index/resource_index/packages/puzzlebot_description
+-- Installing: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/src/puzzlebot_ros2/install/puzzlebot_description/share/puzzlebot_description/cmake/puzzlebot_descriptionConfig.cmake
+-- Installing: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/src/puzzlebot_ros2/install/puzzlebot_description/share/puzzlebot_description/cmake/puzzlebot_descriptionConfig-version.cmake
+-- Installing: /home/sebastian/Juanma/SLAM_Puzzlebot_Orbitrons/puzzlebot_ws/src/puzzlebot_ros2/install/puzzlebot_description/share/puzzlebot_description/package.xml
