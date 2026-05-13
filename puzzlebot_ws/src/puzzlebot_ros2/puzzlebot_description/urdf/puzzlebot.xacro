@@ -1,29 +1,10 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="https://www.ros.org/wiki/xacro" name="puzzlebot">
-
     <!-- ================= entry point ================= -->
     <xacro:arg name="prefix" default="" />
 
-    <!-- Includes -->
     <xacro:include filename="$(find puzzlebot_description)/urdf/puzzlebot_base.urdf.xacro"/>
     <xacro:include filename="$(find puzzlebot_description)/urdf/puzzlebot_control.xacro"/>
-    <xacro:include filename="$(find puzzlebot_description)/urdf/rpi_lidar_sensor.xacro"/>
 
-    <!-- Robot base -->
-    <xacro:puzzlebot_base prefix="$(arg prefix)"/>
-
-    <!-- Lidar -->
-    <xacro:rpi_lidar_sensor
-        prefix="$(arg prefix)"
-        frame_name="lidar_link"
-        parent="base_link"
-        topic_name="scan"
-        update_rate="20"
-        min_range="0.05"
-        max_range="10.0"
-        visualize="true"/>
-
-    <!-- Gazebo control plugins -->
     <xacro:puzzlebot_control prefix="$(arg prefix)"/>
-
 </robot>
