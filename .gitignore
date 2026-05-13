@@ -1,11 +1,14 @@
+# VS Code
 .vscode/
-*.db
-.vscode/
-*.db
-.vscode/
-*.db
-*.db-shm
-*.db-wal
+
+# ROS2 build artifacts
 build/
 install/
 log/
+
+# Python
+__pycache__/
+*.pyc
+
+# Gazebo / temporary
+*.log
