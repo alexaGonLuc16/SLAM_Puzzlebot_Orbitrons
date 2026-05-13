@@ -13,7 +13,7 @@
                 <left_joint>${prefix}wheel_l_joint</left_joint>
                 <right_joint>${prefix}wheel_r_joint</right_joint>
                 <wheel_separation>0.19</wheel_separation>
-                <wheel_radius>0.05</wheel_radius>
+                <wheel_radius>0.0325</wheel_radius>
                 <topic>${prefix}cmd_vel</topic>
                 <tf_topic>${prefix}diff_drive/tf</tf_topic>
                 <odom_topic>${prefix}odom</odom_topic>

@@ -34,9 +34,9 @@
       <!-- ================= COLLISION ================= -->
       <!-- Geometría usada por Gazebo para física -->
       <collision>
-        <origin xyz="-0.052 0 0.05" rpy="0 0 0"/>
+        <origin xyz="-0.052 0 0.015" rpy="0 0 0"/>
         <geometry>
-          <box size="0.20 0.14 0.10"/>
+          <box size="0.18 0.14 0.03"/>
         </geometry>
       </collision>
 
@@ -61,7 +61,7 @@
     <joint name="${prefix}base_link_joint" type="fixed">
       <parent link="${prefix}base_footprint"/>
       <child link="${prefix}base_link"/>
-      <origin xyz="0.052 0 0.05" rpy="0 0 0"/>
+      <origin xyz="0.052 0 0.0325" rpy="0 0 0"/>
     </joint>
 
     <!-- ========================================================= -->
@@ -209,7 +209,7 @@
       <child link="${prefix}caster_link"/>
 
       <!-- Posición trasera -->
-      <origin xyz="-0.147 0 -0.045" rpy="0 0 0"/>
+      <origin xyz="-0.147 0 -0.0325" rpy="0 0 0"/>
     </joint>
 
   </xacro:macro>
