@@ -65,9 +65,34 @@ puzzlebot_gazebo/
 ├── config/
 │   └── gazebo_bridge.yaml
 ├── launch/
-│   ├── puzzlebot_gazebo.launch.xml        
+│   └── puzzlebot_gazebo.launch.xml        
 ├── package.xml
 ├── worlds/
     └── maze.world
+
+```
+## puzzlebot_navigation2
+
+```text
+puzzlebot_navigation2/
+├── CMakeLists.txt
+├── config/
+│   ├── nav2_params.yaml
+│   └── slam_toolbox.yaml
+├── launch/
+│   ├── nav2_core.launch.xml
+│   ├── nav2.launch.xml
+│   ├── slam_core.launch.xml
+│   └── slam.launch.xml
+├── maps/
+│   ├── MALOmy_map.pgm
+│   ├── MALOmy_map.yaml
+│   ├── my_map.pgm
+│   └── my_map.yaml       
+├── package.xml
+├── rviz/
+│   ├── nav2.rviz
+|   └── slam.rviz
+└── scripts
 
 ```
