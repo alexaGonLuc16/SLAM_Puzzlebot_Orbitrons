@@ -1,10 +1,9 @@
-# 🤖 Puzzlebot - Orbitrons
+# Puzzlebot - Orbitrons
 
-## 📌 Información General
 - **Grupo:** 502  
 - **Equipo:** Orbitrons  
 
-## 👥 Integrantes
+## Integrantes
 | Nombre | Matrícula |
 |--------|----------|
 | Alexa Jimena González Lucio | A01277701 |
@@ -14,7 +13,7 @@
 
 ---
 
-## 📖 Descripción del Proyecto
+## Descripción del Proyecto
 Este proyecto consiste en la implementación de un robot tipo *Puzzlebot* utilizando ROS 2, enfocado en navegación autónoma y simulación en entornos virtuales.
 
 El sistema incluye:
@@ -24,7 +23,7 @@ El sistema incluye:
 
 ---
 
-## 📂 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```bash
 puzzlebot_ws/
