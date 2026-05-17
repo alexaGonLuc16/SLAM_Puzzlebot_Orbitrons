@@ -33,5 +33,27 @@ puzzlebot_ws/
         ├── puzzlebot_gazebo/
         └── puzzlebot_navigation/
 ```
-# puzzlebot_description
+## puzzlebot_description
+
+```text
+puzzlebot_description/
+├── CMakeLists.txt
+├── launch/
+│   └── puzzlebot_description.launch.xml
+├── meshes/
+│   ├── MCR2_puzzlebot_jetson_lidar_base.stl        
+│   ├── Puzzlebot_Caster_Wheel.stl     
+│   ├── Puzzlebot_Jetson_Lidar_Edition_Base(1).stl
+│   ├── Puzzlebot_Wheel.stl
+│   └── RPLidar.stl
+├── package.xml
+├── rviz/
+│   └── puzzlebot_description.rviz
+└── urdf/
+    ├── puzzlebot_base.urdf.xacro
+    ├── puzzlebot_control.xacro
+    ├── puzzlebot.urdf.xacro
+    ├── puzzlebot.xacro
+    └── rpi_lidar_sensor.xacro
+```
 
