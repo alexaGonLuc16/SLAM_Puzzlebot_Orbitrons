@@ -57,3 +57,17 @@ puzzlebot_description/
     └── rpi_lidar_sensor.xacro
 ```
 
+## puzzlebot_gazebo
+
+```text
+puzzlebot_gazebo/
+├── CMakeLists.txt
+├── config/
+│   └── gazebo_bridge.yaml
+├── launch/
+│   ├── puzzlebot_gazebo.launch.xml        
+├── package.xml
+├── worlds/
+    └── maze.world
+
+```
