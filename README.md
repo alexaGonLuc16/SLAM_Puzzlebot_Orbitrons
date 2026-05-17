@@ -32,3 +32,5 @@ puzzlebot_ws/
         ├── puzzlebot_description/
         ├── puzzlebot_gazebo/
         └── puzzlebot_navigation/
+```md
+# puzzlebot_description
