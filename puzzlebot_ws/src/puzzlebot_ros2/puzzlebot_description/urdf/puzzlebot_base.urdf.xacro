@@ -3,6 +3,7 @@
 
   <xacro:macro name="puzzlebot_base" params="prefix">
 
+    <!-- ================= BASE FOOTPRINT ================= -->
     <link name="${prefix}base_footprint"/>
 
     <!-- ================= BASE LINK ================= -->
@@ -23,15 +24,15 @@
 
       <!-- Collision -->
       <collision>
-        <origin xyz="-0.052 0 0.05" rpy="0 0 0"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
           <box size="0.20 0.14 0.10"/>
         </geometry>
       </collision>
 
-      <!-- Inercia corregida -->
+      <!-- Inertial -->
       <inertial>
-        <origin xyz="-0.02 0 -0.02"/>
+        <origin xyz="0 0 0"/>
 
         <mass value="3.5"/>
 
@@ -43,11 +44,13 @@
 
     </link>
 
-    <!-- Joint base -->
+    <!-- ================= BASE JOINT ================= -->
     <joint name="${prefix}base_link_joint" type="fixed">
       <parent link="${prefix}base_footprint"/>
       <child link="${prefix}base_link"/>
-      <origin xyz="0.052 0 0.07" rpy="0 0 0"/>
+
+      <!-- Eleva el robot correctamente -->
+      <origin xyz="0 0 0.05" rpy="0 0 0"/>
     </joint>
 
     <!-- ================= LEFT WHEEL ================= -->
@@ -93,7 +96,7 @@
       <parent link="${prefix}base_link"/>
       <child link="${prefix}wheel_l_link"/>
 
-      <origin xyz="0.00 0.095 0.0" rpy="0 0 0"/>
+      <origin xyz="0.00 0.095 0.0025" rpy="0 0 0"/>
 
       <axis xyz="0 1 0"/>
     </joint>
@@ -141,7 +144,7 @@
       <parent link="${prefix}base_link"/>
       <child link="${prefix}wheel_r_link"/>
 
-      <origin xyz="0.00 -0.095 0.0" rpy="0 0 0"/>
+      <origin xyz="0.00 -0.095 0.0025" rpy="0 0 0"/>
 
       <axis xyz="0 1 0"/>
     </joint>
@@ -183,7 +186,7 @@
       <parent link="${prefix}base_link"/>
       <child link="${prefix}caster_link"/>
 
-      <origin xyz="-0.147 0 -0.045" rpy="0 0 0"/>
+      <origin xyz="-0.147 0 -0.040" rpy="0 0 0"/>
     </joint>
 
   </xacro:macro>

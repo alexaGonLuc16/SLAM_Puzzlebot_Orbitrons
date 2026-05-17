@@ -4,7 +4,7 @@
   <name>puzzlebot_description</name>
   <version>0.0.0</version>
   <description>Puzzlebot robot description package with URDF, meshes, launch and RViz assets.</description>
-  <maintainer email="mariog@todo.todo">mariog</maintainer>
+  <maintainer email="a01709885@tec.mx">paulp</maintainer>
   <license>MIT</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
