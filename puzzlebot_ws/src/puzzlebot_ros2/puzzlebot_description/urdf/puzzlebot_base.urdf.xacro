@@ -20,21 +20,21 @@
       <!-- ================= VISUAL ================= -->
       <!-- Cómo se ve el robot en RViz/Gazebo -->
       <visual>
-        <origin xyz="-0.052 0 0" rpy="0 0 0"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
           <mesh filename="package://puzzlebot_description/meshes/Puzzlebot_Jetson_Lidar_Edition_Base(1).stl"
                 scale="1 1 1"/>
         </geometry>
 
-        <material name="white">
-          <color rgba="1.0 1.0 1.0 1.0"/>
+        <material name="red">
+          <color rgba="0.85 0.1 0.1 1.0"/>
         </material>
       </visual>
 
       <!-- ================= COLLISION ================= -->
       <!-- Geometría usada por Gazebo para física -->
       <collision>
-        <origin xyz="-0.052 0 0.05" rpy="0 0 0"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
           <box size="0.20 0.14 0.10"/>
         </geometry>
@@ -54,6 +54,10 @@
 
     </link>
 
+    <gazebo reference="${prefix}base_link">
+      <material>Gazebo/Red</material>
+    </gazebo>
+
     <!-- ========================================================= -->
     <!-- JOINT BASE FOOTPRINT -> BASE LINK                        -->
     <!-- Une el frame del suelo con el cuerpo del robot          -->
@@ -61,7 +65,7 @@
     <joint name="${prefix}base_link_joint" type="fixed">
       <parent link="${prefix}base_footprint"/>
       <child link="${prefix}base_link"/>
-      <origin xyz="0.052 0 0.05" rpy="0 0 0"/>
+      <origin xyz="0 0 0.05" rpy="0 0 0"/>
     </joint>
 
     <!-- ========================================================= -->
@@ -86,7 +90,7 @@
       <collision>
         <origin xyz="0 0 0" rpy="1.5708 0 0"/>
         <geometry>
-          <cylinder radius="0.0325" length="0.02"/>
+          <cylinder radius="0.05" length="0.012"/>
         </geometry>
       </collision>
 
@@ -108,7 +112,7 @@
       <child link="${prefix}wheel_l_link"/>
 
       <!-- Posición lateral izquierda -->
-      <origin xyz="0.00 0.095 0.0" rpy="0 0 0"/>
+      <origin xyz="0.052 0.095 -0.0025" rpy="0 0 0"/>
 
       <!-- Eje de rotación -->
       <axis xyz="0 1 0"/>
@@ -136,7 +140,7 @@
       <collision>
         <origin xyz="0 0 0" rpy="1.5708 0 0"/>
         <geometry>
-          <cylinder radius="0.0325" length="0.02"/>
+          <cylinder radius="0.05" length="0.012"/>
         </geometry>
       </collision>
 
@@ -158,7 +162,7 @@
       <child link="${prefix}wheel_r_link"/>
 
       <!-- Posición lateral derecha -->
-      <origin xyz="0.00 -0.095 0.0" rpy="0 0 0"/>
+      <origin xyz="0.052 -0.095 -0.0025" rpy="0 0 0"/>
 
       <!-- Eje de rotación -->
       <axis xyz="0 1 0"/>
@@ -209,7 +213,7 @@
       <child link="${prefix}caster_link"/>
 
       <!-- Posición trasera -->
-      <origin xyz="-0.147 0 -0.045" rpy="0 0 0"/>
+      <origin xyz="-0.095 0 -0.03" rpy="0 0 0"/>
     </joint>
 
   </xacro:macro>
