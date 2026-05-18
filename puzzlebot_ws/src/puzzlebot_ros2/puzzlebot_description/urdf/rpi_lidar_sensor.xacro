@@ -35,7 +35,11 @@
     lidar_base_mesh_pos_p:='0.0'
     lidar_base_mesh_pos_w:='0.0'
 
+<<<<<<< HEAD
     lidar_base_pos_x:='0.0425'
+=======
+    lidar_base_pos_x:='0.00'
+>>>>>>> paul2
     lidar_base_pos_y:='0.00'
     lidar_base_pos_z:='0.070'
     lidar_base_pos_r:='0.0'
@@ -170,4 +174,8 @@
     </gazebo>
 
     </xacro:macro>
+<<<<<<< HEAD
 </robot>
+=======
+</robot>
+>>>>>>> paul2
