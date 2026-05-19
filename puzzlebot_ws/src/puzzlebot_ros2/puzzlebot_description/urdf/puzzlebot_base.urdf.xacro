@@ -1,28 +1,38 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
+  <!-- estructura física del Puzzlebot   -->
   <xacro:macro name="puzzlebot_base" params="prefix">
 
-    <!-- ================= BASE FOOTPRINT ================= -->
+    <!-- BASE FOOTPRINT                                           -->
+    <!-- Frame base del robot usado para navegación y TF         -->
+    <!-- Normalmente se coloca en el suelo, justo debajo del robot -->
+    <!-- ========================================================= -->
     <link name="${prefix}base_footprint"/>
 
-    <!-- ================= BASE LINK ================= -->
+    <!-- ========================================================= -->
+    <!-- BASE LINK                                                -->
+    <!-- Cuerpo principal del robot                              -->
+    <!-- Contiene mesh visual, colisión e inercia                -->
+    <!-- ========================================================= -->
     <link name="${prefix}base_link">
 
-      <!-- Visual -->
+      <!-- ================= VISUAL ================= -->
+      <!-- Cómo se ve el robot en RViz/Gazebo -->
       <visual>
-        <origin xyz="-0.052 0 0" rpy="0 0 0"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
           <mesh filename="package://puzzlebot_description/meshes/Puzzlebot_Jetson_Lidar_Edition_Base(1).stl"
                 scale="1 1 1"/>
         </geometry>
 
-        <material name="white">
-          <color rgba="1.0 1.0 1.0 1.0"/>
+        <material name="red">
+          <color rgba="0.85 0.1 0.1 1.0"/>
         </material>
       </visual>
 
-      <!-- Collision -->
+      <!-- ================= COLLISION ================= -->
+      <!-- Geometría usada por Gazebo para física -->
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
@@ -30,32 +40,40 @@
         </geometry>
       </collision>
 
-      <!-- Inertial -->
+      <!-- ================= INERTIA ================= -->
+      <!-- Propiedades físicas del robot -->
       <inertial>
         <origin xyz="0 0 0"/>
-
-        <mass value="3.5"/>
+        <mass value="2.0"/>
 
         <inertia
-          ixx="0.06" ixy="0.0" ixz="0.0"
-          iyy="0.08" iyz="0.0"
-          izz="0.10"/>
+          ixx="0.01" ixy="0.0" ixz="0.0"
+          iyy="0.01" iyz="0.0"
+          izz="0.02"/>
       </inertial>
 
     </link>
 
-    <!-- ================= BASE JOINT ================= -->
+    <gazebo reference="${prefix}base_link">
+      <material>Gazebo/Red</material>
+    </gazebo>
+
+    <!-- ========================================================= -->
+    <!-- JOINT BASE FOOTPRINT -> BASE LINK                        -->
+    <!-- Une el frame del suelo con el cuerpo del robot          -->
+    <!-- ========================================================= -->
     <joint name="${prefix}base_link_joint" type="fixed">
       <parent link="${prefix}base_footprint"/>
       <child link="${prefix}base_link"/>
-
-      <!-- Eleva el robot correctamente -->
       <origin xyz="0 0 0.05" rpy="0 0 0"/>
     </joint>
 
-    <!-- ================= LEFT WHEEL ================= -->
+    <!-- ========================================================= -->
+    <!-- LLANTA IZQUIERDA                                         -->
+    <!-- ========================================================= -->
     <link name="${prefix}wheel_l_link">
 
+      <!-- Visual -->
       <visual>
         <origin xyz="0 0 0" rpy="1.5708 0 0"/>
         <geometry>
@@ -68,13 +86,15 @@
         </material>
       </visual>
 
+      <!-- Collision -->
       <collision>
         <origin xyz="0 0 0" rpy="1.5708 0 0"/>
         <geometry>
-          <cylinder radius="0.05" length="0.02"/>
+          <cylinder radius="0.05" length="0.012"/>
         </geometry>
       </collision>
 
+      <!-- Inercia -->
       <inertial>
         <mass value="0.2"/>
 
@@ -86,24 +106,24 @@
 
     </link>
 
-    <!-- Fricción -->
-    <gazebo reference="${prefix}wheel_l_link">
-      <mu1>10.0</mu1>
-      <mu2>10.0</mu2>
-    </gazebo>
-
+    <!-- Joint rueda izquierda -->
     <joint name="${prefix}wheel_l_joint" type="continuous">
       <parent link="${prefix}base_link"/>
       <child link="${prefix}wheel_l_link"/>
 
-      <origin xyz="0.00 0.095 0.0025" rpy="0 0 0"/>
+      <!-- Posición lateral izquierda -->
+      <origin xyz="0.052 0.095 -0.0025" rpy="0 0 0"/>
 
+      <!-- Eje de rotación -->
       <axis xyz="0 1 0"/>
     </joint>
 
-    <!-- ================= RIGHT WHEEL ================= -->
+    <!-- ========================================================= -->
+    <!-- LLANTA DERECHA                                           -->
+    <!-- ========================================================= -->
     <link name="${prefix}wheel_r_link">
 
+      <!-- Visual -->
       <visual>
         <origin xyz="0 0 0" rpy="1.5708 0 0"/>
         <geometry>
@@ -116,13 +136,15 @@
         </material>
       </visual>
 
+      <!-- Collision -->
       <collision>
         <origin xyz="0 0 0" rpy="1.5708 0 0"/>
         <geometry>
-          <cylinder radius="0.05" length="0.02"/>
+          <cylinder radius="0.05" length="0.012"/>
         </geometry>
       </collision>
 
+      <!-- Inercia -->
       <inertial>
         <mass value="0.2"/>
 
@@ -134,24 +156,25 @@
 
     </link>
 
-    <!-- Fricción -->
-    <gazebo reference="${prefix}wheel_r_link">
-      <mu1>10.0</mu1>
-      <mu2>10.0</mu2>
-    </gazebo>
-
+    <!-- Joint rueda derecha -->
     <joint name="${prefix}wheel_r_joint" type="continuous">
       <parent link="${prefix}base_link"/>
       <child link="${prefix}wheel_r_link"/>
 
-      <origin xyz="0.00 -0.095 0.0025" rpy="0 0 0"/>
+      <!-- Posición lateral derecha -->
+      <origin xyz="0.052 -0.095 -0.0025" rpy="0 0 0"/>
 
+      <!-- Eje de rotación -->
       <axis xyz="0 1 0"/>
     </joint>
 
-    <!-- ================= CASTER ================= -->
+    <!-- ========================================================= -->
+    <!-- RUEDA CASTER                                              -->
+    <!-- Rueda loca trasera                                       -->
+    <!-- ========================================================= -->
     <link name="${prefix}caster_link">
 
+      <!-- Visual -->
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
@@ -164,6 +187,7 @@
         </material>
       </visual>
 
+      <!-- Collision -->
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
@@ -171,6 +195,7 @@
         </geometry>
       </collision>
 
+      <!-- Inercia -->
       <inertial>
         <mass value="0.05"/>
 
@@ -182,11 +207,13 @@
 
     </link>
 
+    <!-- Joint caster -->
     <joint name="${prefix}caster_joint" type="fixed">
       <parent link="${prefix}base_link"/>
       <child link="${prefix}caster_link"/>
 
-      <origin xyz="-0.147 0 -0.040" rpy="0 0 0"/>
+      <!-- Posición trasera -->
+      <origin xyz="-0.095 0 -0.03" rpy="0 0 0"/>
     </joint>
 
   </xacro:macro>

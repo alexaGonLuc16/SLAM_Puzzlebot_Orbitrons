@@ -1,0 +1,11 @@
+.vscode/
+*.db
+.vscode/
+*.db
+.vscode/
+*.db
+*.db-shm
+*.db-wal
+build/
+install/
+log/
