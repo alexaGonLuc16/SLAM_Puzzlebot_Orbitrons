@@ -5,7 +5,7 @@
 
   <xacro:macro name="rpi_lidar_sensor" params="
     prefix:=''
-    frame_name:='laser_frame'
+    frame_name:='laser'
     parent:='base_link'
     mesh_file:='file://$(find puzzlebot_description)/meshes/RPLidar.stl'
 

@@ -1,0 +1,9 @@
+<launch>
+    <node pkg="puzzlebot_real_robot" exec="puzzlebot_localization.py" name="localisation" output="screen" />
+
+    <node pkg="puzzlebot_real_robot" exec="puzzlebot_joint_state_publisher.py" name="puzzlebot_joint_state_publisher" output="screen" />
+
+    <include file="$(find-pkg-share rplidar_ros)/launch/rplidar_a1_launch.py">
+        <arg name="serial_port" value="/dev/ttyUSB1" />
+    </include>
+</launch>
