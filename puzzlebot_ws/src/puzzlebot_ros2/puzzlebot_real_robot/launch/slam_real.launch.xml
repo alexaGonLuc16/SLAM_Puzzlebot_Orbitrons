@@ -1,26 +1,33 @@
+<?xml version="1.0"?>
 <launch>
-    <arg name="slam_params_file" default="$(find-pkg-share puzzlebot_real_robot)/config/slam_toolbox_real.yaml" />
-    <arg name="rviz_config_path" default="$(find-pkg-share puzzlebot_navigation2)/rviz/slam.rviz" />
+    <arg name="use_sim_time" default="false"/>
+    <arg name="publish_description" default="true"/>
+
+    <include file="$(find-pkg-share puzzlebot_description)/launch/puzzlebot_description.launch.xml">
+        <arg name="use_sim_time" value="$(var use_sim_time)"/>
+        <arg name="rviz" value="false"/>
+        <arg name="publish_description" value="$(var publish_description)"/>
+    </include>
+
+    <let name="slam_params_file"
+         value="$(find-pkg-share puzzlebot_real_robot)/config/slam_toolbox_real.yaml"/>
 
     <node pkg="slam_toolbox"
           exec="async_slam_toolbox_node"
           name="slam_toolbox"
           output="screen">
-        <param name="use_sim_time" value="false" />
-        <param from="$(var slam_params_file)" />
+        <param from="$(var slam_params_file)"/>
+        <param name="use_sim_time" value="$(var use_sim_time)"/>
     </node>
+
+    <let name="rviz_config"
+         value="$(find-pkg-share puzzlebot_navigation2)/rviz/slam.rviz"/>
 
     <node pkg="rviz2"
           exec="rviz2"
           name="rviz2"
           output="screen"
-          args="-d $(var rviz_config_path)">
-        <param name="use_sim_time" value="false" />
+          args="-d $(var rviz_config)">
+        <param name="use_sim_time" value="$(var use_sim_time)"/>
     </node>
-
-    <node pkg="teleop_twist_keyboard"
-          exec="teleop_twist_keyboard"
-          name="teleop_keyboard"
-          output="screen"
-          launch-prefix="xterm -e" />
 </launch>

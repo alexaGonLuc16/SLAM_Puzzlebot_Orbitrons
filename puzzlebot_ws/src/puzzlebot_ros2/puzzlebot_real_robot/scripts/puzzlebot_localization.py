@@ -4,7 +4,7 @@ from tf2_ros import TransformBroadcaster
 import rclpy 
 from rclpy.node import Node 
 from std_msgs.msg import Float32
-import math
+import transforms3d
 from nav_msgs.msg import Odometry
 import numpy as np
 
@@ -84,10 +84,11 @@ class Localisation(Node):
         odom_msg.pose.pose.position.z = 0.0
 
         # Quaternion
-        odom_msg.pose.pose.orientation.x = 0.0
-        odom_msg.pose.pose.orientation.y = 0.0
-        odom_msg.pose.pose.orientation.z = math.sin(self.theta / 2.0)
-        odom_msg.pose.pose.orientation.w = math.cos(self.theta / 2.0)
+        quat = transforms3d.euler.euler2quat(0,0,self.theta) 
+        odom_msg.pose.pose.orientation.w = quat[0]
+        odom_msg.pose.pose.orientation.x = quat[1]
+        odom_msg.pose.pose.orientation.y = quat[2]
+        odom_msg.pose.pose.orientation.z = quat[3]
 
         # Linear and angular velocity
         odom_msg.twist.twist.linear.x = self.v

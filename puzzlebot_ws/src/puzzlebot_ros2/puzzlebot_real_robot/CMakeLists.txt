@@ -11,11 +11,13 @@ install(
   DESTINATION share/${PROJECT_NAME}
 )
 
-install(
-  PROGRAMS
-    scripts/puzzlebot_localization.py
-    scripts/puzzlebot_joint_state_publisher.py
-  DESTINATION lib/${PROJECT_NAME}
-)
+if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/scripts")
+  install(
+    PROGRAMS
+      scripts/puzzlebot_localization.py
+      scripts/puzzlebot_joint_state_publisher.py
+    DESTINATION lib/${PROJECT_NAME}
+  )
+endif()
 
 ament_package()
