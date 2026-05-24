@@ -30,7 +30,7 @@
     <arg name="use_sim_time" default="false"/>
 
     <!-- Local paths within puzzlebot_description package -->
-    <let name="urdf_path" value="$(find-pkg-share puzzlebot_description)/urdf/puzzlebot_base.urdf.xacro"/>
+    <let name="urdf_path" value="$(find-pkg-share puzzlebot_description)/urdf/puzzlebot_physical.urdf.xacro"/>
     <let name="rviz_config_path" value="$(find-pkg-share puzzlebot_description)/rviz/puzzlebot_description.rviz"/>
     
     <!-- Gazebo garden launch file path --> 
