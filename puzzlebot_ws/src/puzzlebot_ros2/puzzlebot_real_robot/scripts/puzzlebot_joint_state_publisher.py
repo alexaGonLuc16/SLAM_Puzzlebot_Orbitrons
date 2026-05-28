@@ -8,7 +8,7 @@ from nav_msgs.msg import Odometry
 
 class StatePublisher(Node):
     def __init__(self):
-        super().__init__('puzzlebot_state_publisher')
+        super().__init__('puzzlebot_joint_state_publisher')
 
         # Parámetros del robot
         self.r = 0.05 # wheel radius

@@ -9,7 +9,7 @@
 
   <xacro:puzzlebot_base prefix="$(arg prefix)"/>
 
-  <xacro:rpi_lidar_sensor prefix="$(arg prefix)"/>
+  <xacro:rpi_lidar_sensor prefix="$(arg prefix)" frame_name="laser"/>
 
   <!-- <xacro:puzzlebot_control prefix="$(arg prefix)"/> -->
 

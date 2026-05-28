@@ -1,13 +1,6 @@
 <?xml version="1.0"?>
 <launch>
     <arg name="use_sim_time" default="false"/>
-    <arg name="publish_description" default="true"/>
-
-    <include file="$(find-pkg-share puzzlebot_description)/launch/puzzlebot_description.launch.xml">
-        <arg name="use_sim_time" value="$(var use_sim_time)"/>
-        <arg name="rviz" value="false"/>
-        <arg name="publish_description" value="$(var publish_description)"/>
-    </include>
 
     <let name="slam_params_file"
          value="$(find-pkg-share puzzlebot_real_robot)/config/slam_toolbox_real.yaml"/>

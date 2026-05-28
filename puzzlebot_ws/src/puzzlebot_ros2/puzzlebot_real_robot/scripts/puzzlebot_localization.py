@@ -7,15 +7,18 @@ from std_msgs.msg import Float32
 import transforms3d
 from nav_msgs.msg import Odometry
 import numpy as np
+from rclpy.qos import QoSProfile, ReliabilityPolicy
 
 
 class Localisation(Node): 
     def __init__(self): 
-        super().__init__('localisation') 
+        super().__init__('puzzlebot_localization') 
 
         # SUBSCRIBERS
-        self.wr_sub = self.create_subscription(Float32, "/wr", self.wr_cb, 10)
-        self.wl_sub = self.create_subscription(Float32, "/wl", self.wl_cb, 10)
+        qos = QoSProfile(depth=10, reliability=ReliabilityPolicy.BEST_EFFORT)
+
+        self.wr_sub = self.create_subscription(Float32, "/VelocityEncR", self.wr_cb, qos)
+        self.wl_sub = self.create_subscription(Float32, "/VelocityEncL", self.wl_cb, qos)
 
         # PUBLISHERS
         self.odom_pub = self.create_publisher(Odometry, "/odom", 10)
@@ -37,23 +40,26 @@ class Localisation(Node):
         self.w = 0.0
 
         # TIMER
-        self.dt = 0.05 # 20 Hz 
-        self.timer = self.create_timer(self.dt, self.timer_callback) 
+        self.last_time = self.get_clock().now()
+        self.timer = self.create_timer(0.05, self.timer_callback) 
         self.get_logger().info("Node  Localisation initialized!!!") 
      
 
     def timer_callback(self): 
         # Velocidades
+        now = self.get_clock().now()
+        dt = (now - self.last_time).nanoseconds / 1e9
+        self.last_time = now
         self.v = self.r * (self.wr + self.wl) / 2.0
         self.w = self.r * (self.wr - self.wl) / self.L
 
         # Robot pose with odometry
-        self.x += self.v * np.cos(self.theta) * self.dt
-        self.y += self.v * np.sin(self.theta) * self.dt
-        self.theta += self.w * self.dt
+        self.x += self.v * np.cos(self.theta) * dt
+        self.y += self.v * np.sin(self.theta) * dt
+        self.theta += self.w * dt
         
         # Publish 
-        odom_msg = self.odom_message()
+        odom_msg = self.odom_message(now)
         self.odom_pub.publish(odom_msg)
         self.publish_tf(odom_msg)
         
@@ -73,10 +79,10 @@ class Localisation(Node):
 
         self.tf_broadcaster.sendTransform(t)
 
-    def odom_message(self):
+    def odom_message(self, now):
         odom_msg = Odometry()
 
-        odom_msg.header.stamp = self.get_clock().now().to_msg()
+        odom_msg.header.stamp = now.to_msg()
         odom_msg.header.frame_id = 'odom' 
         odom_msg.child_frame_id = 'base_footprint'
         odom_msg.pose.pose.position.x = self.x 

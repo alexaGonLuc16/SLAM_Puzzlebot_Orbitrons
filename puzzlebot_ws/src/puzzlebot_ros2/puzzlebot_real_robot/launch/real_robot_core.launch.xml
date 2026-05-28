@@ -5,7 +5,7 @@
     <let name="micro_ros_agent" value="$(find-pkg-share puzzlebot_ros)/micro_ros_agent.launch.py"/>
     <let name="lidar_launch" value="$(find-pkg-share rplidar_ros)/launch/rplidar_a1_launch.py"/>
     
-    <include file="$(var micro_ros_agent)"/>
+    <include file="$(var micro_ros_agent)"/> 
 
     <include file="$(var lidar_launch)">
         <arg name="serial_port" value="/dev/ttyUSB1"/>
@@ -30,8 +30,4 @@
         <param name="use_sim_time" value="$(var use_sim_time)"/>
     </node>
 
-    <!--tf laser fix-->
-    <node pkg="tf2_ros" exec="static_transform_publisher"
-        name="laser_tf_fix"
-        args="0 0 0 0 0 0 laser_frame laser"/>
 </launch>
