@@ -107,6 +107,8 @@ Lanza Gazebo, el mundo y robot virtuales.
 
 ## puzzlebot_navigation2
 
+Paquete encargado del mapeo y navegación utilizando las herramientas estándar de ROS2 Navigation Stack.
+
 ```text
 puzzlebot_navigation2/
 ├── CMakeLists.txt
@@ -130,3 +132,19 @@ puzzlebot_navigation2/
 └── scripts
 
 ```
+- `slam.launch.xml`:
+Lanza el entorno para crear mapas.
+- `slam_core.launch.xml`:
+Ejecuta los nodos necesarios para SLAM.
+- `nav2.launch.xml`:
+Lanza Navigation2 completo.
+- `nav2_core.launch.xml`:
+Configura los nodos internos de Nav2.
+- `slam_toolbox.yaml`:
+Configuración de optimización del mapa.
+- `nav2_params.yaml`:
+Configuración de AMCL, Planner, Controller, Costmaps y Recovery Behaviors
+- `slam.rviz`:
+Visualización del proceso de mapeo.
+- `nav2.rviz`:
+Visualización durante la navegación.
