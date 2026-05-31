@@ -143,8 +143,47 @@ Configura los nodos internos de Nav2.
 - `slam_toolbox.yaml`:
 Configuración de optimización del mapa.
 - `nav2_params.yaml`:
-Configuración de AMCL, Planner, Controller, Costmaps y Recovery Behaviors
+Configuración de AMCL, Planner, Controller, Costmaps y Recovery Behaviors.
 - `slam.rviz`:
 Visualización del proceso de mapeo.
 - `nav2.rviz`:
 Visualización durante la navegación.
+
+## puzzlebot_real_robot
+
+Este paquete integra el robot físico con ROS2.
+
+```text
+puzzlebot_real_robot/
+│
+├── scripts/
+│   ├── puzzlebot_joint_state_publisher.py
+│   └── puzzlebot_localization.py
+│
+├── config/
+│   ├── nav2_params_real.yaml
+│   └── slam_toolbox_real.yaml
+│
+├── launch/
+│   ├── slam_real.launch.xml
+│   ├── nav2_real.launch.xml
+│   └── real_robot_core.launch.xml
+│
+└── maps/
+    ├── map_maze_real.*
+    └── OTROmap_maze_real.*
+```
+- `puzzlebot_joint_state_publisher.py`:
+Publica /joint_states y permite actualizar los valores de las ruedas en base_link.
+- `puzzlebot_localization.py`:
+Nodo de localización del robot.
+- `slam_real.launch.xml`:
+Lanza SLAM Toolbox sobre el robot físico.
+- `nav2_real.launch.xml`:
+Lanza Navigation2 para navegación autónoma.
+- `real_robot_core.launch.xml`:
+Lanza los nodos base necesarios para el robot real.
+- `slam_toolbox_real.yaml`:
+Parámetros específicos del LiDAR y del entorno real.
+- `nav2_params_real.yaml`:
+Parámetros optimizados.
