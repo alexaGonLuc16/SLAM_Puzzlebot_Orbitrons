@@ -40,12 +40,6 @@ puzzlebot_ws/
 ```
 ## puzzlebot_description
 
-```text
-puzzlebot_description/
-├── CMakeLists.txt
-├── launch/
-│   └── puzzlebo## puzzlebot_description
-
 Este paquete contiene la descripción completa del robot utilizando URDF/Xacro. Define la estructura mecánica del Puzzlebot, los sensores, los frames TF, las propiedades físicas y los modelos visuales utilizados por RViz y ROS 2.
 
 ```text
