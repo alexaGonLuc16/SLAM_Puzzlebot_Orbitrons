@@ -44,6 +44,14 @@ puzzlebot_ws/
 puzzlebot_description/
 ├── CMakeLists.txt
 ├── launch/
+│   └── puzzlebo## puzzlebot_description
+
+Este paquete contiene la descripción completa del robot utilizando URDF/Xacro. Define la estructura mecánica del Puzzlebot, los sensores, los frames TF, las propiedades físicas y los modelos visuales utilizados por RViz y ROS 2.
+
+```text
+puzzlebot_description/
+├── CMakeLists.txt
+├── launch/
 │   └── puzzlebot_description.launch.xml
 ├── meshes/
 │   ├── MCR2_puzzlebot_jetson_lidar_base.stl        
@@ -59,8 +67,26 @@ puzzlebot_description/
     ├── puzzlebot_control.xacro
     ├── puzzlebot.urdf.xacro
     ├── puzzlebot.xacro
+    ├── puzzlebot_physical.urdf.xacro
     └── rpi_lidar_sensor.xacro
 ```
+- `puzzlebot.urdf.xacro`:
+Es el archivo encargado de ensamblar el robot completo.
+
+- `puzzlebot_base.urdf.xacro`:
+Define chasis, ruedas, caster wheel y joints.
+
+- `puzzlebot_control.xacro`:
+Define control diferencial, odometría e interfaces de ROS2.
+
+- `puzzlebot_physical.urdf.xacro`:
+Una versión adaptada para el robot físico.
+
+- `rpi_lidar_sensor.xacro`:
+Define el frame del LiDAR, el sensor láser y la publicación de /scan.
+
+- `puzzlebot_description.launch.xml`:
+Lanza robot_state_publisher y publica TF.
 
 ## puzzlebot_gazebo
 
