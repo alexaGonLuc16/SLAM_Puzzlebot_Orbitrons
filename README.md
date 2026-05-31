@@ -1,4 +1,4 @@
-# Puzzlebot - Orbitrons
+# Puzzlebot Autonomous Navigation using SLAM and AMCL - Orbitrons
 
 - **Grupo:** 502  
 - **Equipo:** Orbitrons  
@@ -13,13 +13,15 @@
 
 ---
 
-## Descripción del Proyecto
-Este proyecto consiste en la implementación de un robot tipo *Puzzlebot* utilizando ROS 2, enfocado en navegación autónoma y simulación en entornos virtuales.
+## Descripción del proyecto
+Este proyecto implementa un sistema de mapeo, localización y navegación autónoma para un Puzzlebot utilizando ROS 2. Se emplea SLAM Toolbox para la construcción de mapas del entorno y AMCL (Adaptive Monte Carlo Localization) para la localización del robot sobre los mapas previamente generados. Una vez localizado, el robot utiliza Navigation2 para planificar y ejecutar trayectorias de forma autónoma en entornos reales mediante información proveniente de un sensor LiDAR.
 
 El sistema incluye:
 - Modelado del robot
 - Simulación en Gazebo
 - Algoritmos de navegación
+
+El proyecto está orientado a la implementación en hardware real y permite realizar el ciclo completo de exploración, generación de mapas, localización y navegación autónoma.
 
 ---
 
