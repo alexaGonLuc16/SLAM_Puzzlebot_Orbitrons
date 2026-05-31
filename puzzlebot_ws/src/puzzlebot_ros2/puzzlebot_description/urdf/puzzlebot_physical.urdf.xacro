@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="puzzlebot">
+
+  <xacro:arg name="prefix" default="" />
+
+  <xacro:include filename="$(find puzzlebot_description)/urdf/puzzlebot_base.urdf.xacro"/>
+  <!-- <xacro:include filename="$(find puzzlebot_description)/urdf/puzzlebot_control.xacro"/> -->
+  <xacro:include filename="$(find puzzlebot_description)/urdf/rpi_lidar_sensor.xacro"/>
+
+  <xacro:puzzlebot_base prefix="$(arg prefix)"/>
+
+  <xacro:rpi_lidar_sensor prefix="$(arg prefix)" frame_name="laser"/>
+
+  <!-- <xacro:puzzlebot_control prefix="$(arg prefix)"/> -->
+
+</robot>
