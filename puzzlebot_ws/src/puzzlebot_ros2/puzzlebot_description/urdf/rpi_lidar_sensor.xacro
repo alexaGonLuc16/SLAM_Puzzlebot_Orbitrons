@@ -5,9 +5,9 @@
 
   <xacro:macro name="rpi_lidar_sensor" params="
     prefix:=''
-    frame_name:='laser_frame'
+    frame_name:='laser'
     parent:='base_link'
-    mesh_file:='file://$(find puzzlebot_description)/meshes/RPLidar.stl'
+    mesh_file:='package://puzzlebot_description/meshes/RPLidar.stl'
 
     lidar_base_mass:='0.1755'
     lidar_base_length:='0.08'
@@ -136,38 +136,6 @@
     <gazebo reference='${prefix}lidar_joint'>
     <preserveFixedJoint>true</preserveFixedJoint>
     </gazebo>-->
-
-    <gazebo reference="${prefix}${frame_name}">
-        <sensor name="${prefix}lidar_sensor" type="gpu_lidar">
-            <topic>${prefix}${topic_name}</topic>
-            <gz_frame_id>${prefix}${frame_name}</gz_frame_id>
-            <pose> 0 0 0 0 0 0 </pose>
-            <update_rate>${update_rate}</update_rate>
-            <always_on>${always_on}</always_on>
-            <visualize>${visualize}</visualize>
-            <ray>
-            <scan>
-                <horizontal>
-                <samples>${ray_count}</samples>
-                <resolution>1</resolution>
-                <min_angle>${min_angle}</min_angle>
-                <max_angle>${max_angle}</max_angle>
-                </horizontal>
-                <vertical>
-                <samples>1</samples>
-                <resolution>0.01</resolution>
-                <min_angle>0</min_angle>
-                <max_angle>0</max_angle>
-                </vertical>
-            </scan>
-            <range>
-                <min>${min_range}</min>
-                <max>${max_range}</max>
-                <resolution>${range_resolution}</resolution>
-            </range>
-            </ray>
-        </sensor>
-    </gazebo>
 
     </xacro:macro>
 </robot>
