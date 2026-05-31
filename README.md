@@ -84,6 +84,8 @@ Lanza robot_state_publisher y publica TF.
 
 ## puzzlebot_gazebo
 
+Paquete utilizado durante la fase de simulación. Permite ejecutar el Puzzlebot dentro de Gazebo, simular sensores y validar algoritmos antes de desplegarlos en hardware real.
+
 ```text
 puzzlebot_gazebo/
 ├── CMakeLists.txt
@@ -96,6 +98,13 @@ puzzlebot_gazebo/
     └── maze.world
 
 ```
+- `maze.world`:
+Es el entorno de simulación que contiene las paredes, los obstáculos y en general la geometría del laberinto.
+- `gazebo_bridge.yaml`:
+Es la conexión entre ROS2 y Gazebo. 
+- `puzzlebot_gazebo.launch.xml`:
+Lanza Gazebo, el mundo y robot virtuales.
+
 ## puzzlebot_navigation2
 
 ```text
