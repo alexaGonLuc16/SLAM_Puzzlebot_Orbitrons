@@ -17,9 +17,12 @@
 Este proyecto implementa un sistema de mapeo, localización y navegación autónoma para un Puzzlebot utilizando ROS 2. Se emplea SLAM Toolbox para la construcción de mapas del entorno y AMCL (Adaptive Monte Carlo Localization) para la localización del robot sobre los mapas previamente generados. Una vez localizado, el robot utiliza Navigation2 para planificar y ejecutar trayectorias de forma autónoma en entornos reales mediante información proveniente de un sensor LiDAR.
 
 El sistema incluye:
-- Modelado del robot
-- Simulación en Gazebo
-- Algoritmos de navegación
+- Modelado del robot mediante URDF/Xacro
+- Generación de mapas utilizando SLAM Toolbox y un sensor LiDAR
+- Localización probabilística mediante AMCL
+- Navegación autónoma utilizando Navigation2
+- Publicación y gestión de transformaciones TF
+- Planificación y seguimiento de trayectorias en tiempo real
 
 El proyecto está orientado a la implementación en hardware real y permite realizar el ciclo completo de exploración, generación de mapas, localización y navegación autónoma.
 
