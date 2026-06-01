@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="use_sim_time" default="false"/>
+
+    <let name="slam_params_file"
+         value="$(find-pkg-share puzzlebot_real_robot)/config/slam_toolbox_real.yaml"/>
+
+    <node pkg="slam_toolbox"
+          exec="async_slam_toolbox_node"
+          name="slam_toolbox"
+          output="screen">
+        <param from="$(var slam_params_file)"/>
+        <param name="use_sim_time" value="$(var use_sim_time)"/>
+    </node>
+
+    <let name="rviz_config"
+         value="$(find-pkg-share puzzlebot_navigation2)/rviz/slam.rviz"/>
+
+    <node pkg="rviz2"
+          exec="rviz2"
+          name="rviz2"
+          output="screen"
+          args="-d $(var rviz_config)">
+        <param name="use_sim_time" value="$(var use_sim_time)"/>
+    </node>
+</launch>

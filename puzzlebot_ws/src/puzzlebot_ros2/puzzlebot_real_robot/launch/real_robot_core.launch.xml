@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<launch>
+    <let name="use_sim_time" value="false"/>
+    <let name="urdf_path" value="$(find-pkg-share puzzlebot_description)/urdf/puzzlebot_physical.urdf.xacro"/>
+    <let name="micro_ros_agent" value="$(find-pkg-share puzzlebot_ros)/micro_ros_agent.launch.py"/>
+    <let name="lidar_launch" value="$(find-pkg-share rplidar_ros)/launch/rplidar_a1_launch.py"/>
+    
+    <include file="$(var micro_ros_agent)"/> 
+
+    <include file="$(var lidar_launch)">
+        <arg name="serial_port" value="/dev/ttyUSB1"/>
+    </include>
+
+    <node pkg="puzzlebot_real_robot"
+          exec="puzzlebot_localization.py"
+          name="puzzlebot_localization"
+          output="screen">
+    </node>
+
+    <node pkg="puzzlebot_real_robot"
+          exec="puzzlebot_joint_state_publisher.py"
+          name="puzzlebot_joint_state_publisher"
+          output="screen">
+        <param name="use_sim_time" value="$(var use_sim_time)"/>
+    </node>
+
+    <!--robot state publisher-->
+    <node pkg="robot_state_publisher" exec="robot_state_publisher">
+        <param name="robot_description" value="$(command 'xacro $(var urdf_path)')"/>
+        <param name="use_sim_time" value="$(var use_sim_time)"/>
+    </node>
+
+</launch>
